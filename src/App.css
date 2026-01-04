@@ -63,3 +63,39 @@
 .planner-box select:focus {
   border: 3px solid aquamarine;
 }
+.btn-primary {
+  width: 35%;
+  font-size: 12px;
+}
+.btn-primary:hover {
+  background-color: rgb(153, 153, 153);
+  transition: 0.3s;
+}
+.map-box {
+  width: 70%;
+  height: 100%;
+}
+.x-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.inp-box {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-standard-mini {
+  background-color: transparent;
+  cursor: auto;
+  position: absolute;
+  top: -15px;
+  right: 50px;
+  border-radius: 2px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
