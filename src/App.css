@@ -1,0 +1,65 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.planner-box {
+  font-family: sans-serif;
+  width: 30%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.page-title {
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.icon-1 {
+  color: aquamarine;
+  height: 30px;
+  width: 30px;
+}
+.input-standard {
+  width: 70%;
+  padding: 15px;
+  font-size: 15px;
+  outline: none;
+}
+.input-standard:focus {
+  border: 3px solid aquamarine;
+}
+.btn {
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  padding: 10px;
+  border-radius: 2rem;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-color: rgb(179, 179, 179);
+  transition: 0.3s;
+  font-weight: 550;
+}
+.btn-standard {
+  width: 50%;
+}
+.btn-standard:hover {
+  background-color: rgb(153, 153, 153);
+  transition: 0.3s;
+}
+.planner-box select {
+  width: 70%;
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+}
+.planner-box select:focus {
+  border: 3px solid aquamarine;
+}
