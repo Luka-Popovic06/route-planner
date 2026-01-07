@@ -99,3 +99,17 @@
   display: flex;
   align-items: center;
 }
+.cluster-icon {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(50, 179, 208);
+  border-radius: 50%;
+  background-color: rgb(255, 34, 0);
+  box-shadow: 0 2px 20px 10px rgba(167, 15, 15, 0.54);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-25%, -25%);
+}
