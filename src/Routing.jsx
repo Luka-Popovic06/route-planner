@@ -3,6 +3,16 @@ import { useMap } from "react-leaflet";
 import L from "leaflet";
 
 function Routing({ points, movementType, info }) {
+  const formatTime = (seconds) => {
+    if (!seconds || seconds < 0) return "0 min";
+    const hours = Math.floor(seconds / 3600);
+    const minutes = Math.round((seconds % 3600) / 60);
+
+    if (hours > 0) return `${hours} h ${minutes} min`;
+
+    return `${minutes} min`;
+  };
+
   const map = useMap();
 
   useEffect(() => {
