@@ -1,4 +1,4 @@
-export const InpArray = {
+export const routeFormConfig = {
   start: {
     name: "start",
     id: crypto.randomUUID(),
@@ -17,7 +17,7 @@ export const InpArray = {
     value: "",
   },
 };
-export const optionsArray = [
+export const movementOptions = [
   {
     text: "Driving 🚗",
     value: "driving",

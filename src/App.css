@@ -113,3 +113,13 @@
   justify-content: center;
   transform: translate(-25%, -25%);
 }
+.route-plan-box {
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+}
+.route-plan-box span {
+  color: aquamarine;
+}
