@@ -1,8 +1,14 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { Icon } from "leaflet";
 import Routing from "./Routing";
 
 function MapComponent({ mapMarkers, movement, routeInfo }) {
   const center = [44.792, 20.455];
+
+  const customIcon = new Icon({
+    iconUrl: "marker-icon.png",
+    iconSize: [38, 38],
+  });
 
   return (
     <MapContainer
@@ -16,12 +22,12 @@ function MapComponent({ mapMarkers, movement, routeInfo }) {
       />
 
       {!mapMarkers ? (
-        <Marker position={center}>
+        <Marker position={center} icon={customIcon}>
           <Popup>Beograd</Popup>
         </Marker>
       ) : (
         mapMarkers?.map((m, index) => (
-          <Marker key={index} position={[m.lat, m.lon]}>
+          <Marker key={index} position={[m.lat, m.lon]} icon={customIcon}>
             <Popup>{m.name}</Popup>
           </Marker>
         ))
