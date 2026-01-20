@@ -2,7 +2,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import Routing from "./Routing";
 
 function MapComponent({ mapMarkers, movement, routeInfo }) {
-  const center = [44.792, 20.455]; // Beograd
+  const center = [44.792, 20.455];
 
   return (
     <MapContainer
