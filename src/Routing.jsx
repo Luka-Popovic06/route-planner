@@ -20,6 +20,9 @@ function Routing({ points, movementType, info }) {
 
     const control = L.Routing.control({
       waypoints: points.map((p) => L.latLng(p.lat, p.lon)),
+
+      createMarker: () => null, // da mi se ne pojavljuju markeri od leaflet-a
+
       router: L.Routing.osrmv1({
         serviceUrl: "https://router.project-osrm.org/route/v1",
         profile: "car",
